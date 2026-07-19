@@ -1,0 +1,6 @@
+{
+    "cmake.environment": {
+        "VCPKG_ROOT": "/Users/jensvatne/vcpkg"
+    },
+    "cmake.configureOnOpen": true
+}
