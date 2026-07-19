@@ -1,0 +1,12 @@
+#name,type1,type2,HP,attack,defence,spattack,spdefence,speed
+
+Charizard,Fire,Flying,78,84,78,109,85,100
+Gengar,Ghost,Poison,60,65,60,130,75,110
+Mewtwo,Psychic,None,106,110,90,154,90,130
+Dragonite,Dragon,Flying,91,134,95,100,100,80
+Alakazam,Psychic,None,55,50,45,135,95,120
+Machamp,Fighting,None,90,130,80,65,85,55
+Metagross,Steel,Psychic,80,135,130,95,90,70
+Salamence,Dragon,Flying,95,135,80,110,80,100
+Blaziken,Fire,Fighting,80,120,70,110,70,80
+Gardevoir,Psychic,None,68,65,65,125,115,80

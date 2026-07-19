@@ -1,0 +1,67 @@
+#name,type,category,power,accuracy,pp,status,status_chance,status_target,stat1,stat1_change,stat1_chance,stat1_target,stat2,stat2_change,stat2_chance,stat2_target,recoil,healing,drain,always_hits,high_crit,flinch_chance,special_effect,priority,confusion,confusion_chance
+
+# Struggle, om alle trekk har 0 PP
+Struggle,Struggle,Physical,50,100,1000000,None,0,false,None,0,0,false,None,0,0,false,25,0,0,true,false,0,None,0,false,0
+
+# Grunnleggende fysisk angrep – ingen ekstraeffekter
+Tackle,Normal,Physical,40,100,35,None,0,false,None,0,0,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Special effect: Protect
+Protect,Normal,Status,-1,-1,10,None,0,false,None,0,0,false,None,0,0,false,0,0,0,false,false,0,Protect,4,false,0
+
+# Status-sjanse (Burn)
+Flamethrower,Fire,Special,95,100,15,Burned,10,false,None,0,0,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Status-sjanse (Paralysis)
+Thunderbolt,Electric,Special,95,100,15,Paralyzed,10,false,None,0,0,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Status-sjanse (Freeze)
+Ice Beam,Ice,Special,95,100,10,Frozen,10,false,None,0,0,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Status-sjanse + flinch
+Body Slam,Normal,Physical,85,100,15,Paralyzed,30,false,None,0,0,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Flinch-sjanse
+Rock Slide,Rock,Physical,75,90,10,None,0,false,None,0,0,false,None,0,0,false,0,0,0,false,false,30,None,0,false,0
+
+# Flinch-sjanse
+Headbutt,Normal,Physical,70,100,15,None,0,false,None,0,0,false,None,0,0,false,0,0,0,false,false,30,None,0,false,0
+
+# Stat-endring på bruker (+Atk og +Spe i én slot)
+Dragon Dance,Dragon,Status,-1,-1,20,None,0,false,Attack+Speed,1,100,true,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Stat-endring på bruker (+Atk og +Def i én slot)
+Bulk Up,Fighting,Status,-1,-1,20,None,0,false,Attack+Defense,1,100,true,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Stat-endring på bruker (+SpAtk og +SpDef i én slot)
+Calm Mind,Psychic,Status,-1,-1,20,None,0,false,SpAttack+SpDefence,1,100,true,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Stat-endring negativ på bruker (begge stats i én slot)
+Superpower,Fighting,Physical,120,100,5,None,0,false,Attack+Defense,-1,100,true,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# AllStats på bruker
+Silver Wind,Bug,Special,60,100,5,None,0,false,AllStats,1,10,true,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Stat-senking på motstander (SpDef)
+Shadow Ball,Ghost,Special,80,100,15,None,0,false,SpDefence,-1,20,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Stat-senking på motstander (to stats i én slot)
+Tickle,Normal,Status,-1,100,20,None,0,false,Attack+Defense,-1,100,false,None,0,0,false,0,0,0,false,false,0,None,0,false,0
+
+# Recoil
+Double-Edge,Normal,Physical,120,100,15,None,0,false,None,0,0,false,None,0,0,false,33,0,0,false,false,0,None,0,false,0
+
+# Healing
+Recover,Normal,Status,-1,-1,20,None,0,false,None,0,0,false,None,0,0,false,0,50,0,false,false,0,None,0,false,0
+
+# Drain
+Giga Drain,Grass,Special,60,100,5,None,0,false,None,0,0,false,None,0,0,false,0,0,50,false,false,0,None,0,false,0
+
+# Treffer alltid (always_hits)
+Aerial Ace,Flying,Physical,60,-1,20,None,0,false,None,0,0,false,None,0,0,false,0,0,0,true,false,0,None,0,false,0
+
+# Høy critical hit-ratio
+Slash,Normal,Physical,70,100,20,None,0,false,None,0,0,false,None,0,0,false,0,0,0,false,true,0,None,0,false,0
+
+# Confusion
+Confuse Ray,Normal,Status,0,70,20,None,0,false,None,0,0,false,None,0,0,false,0,0,0,false,true,0,None,0,true,100
